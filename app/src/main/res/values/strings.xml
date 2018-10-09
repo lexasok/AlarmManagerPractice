@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AlarmManagerPractice</string>
+    <string name="title_button_set_alarm">set alarm notification</string>
 </resources>
