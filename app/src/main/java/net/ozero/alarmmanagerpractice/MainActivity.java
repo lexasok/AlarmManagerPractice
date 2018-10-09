@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public void setAlarmButtonClicked(View view) {
 
         Log.i(getClass().getName(), "setAlarmButtonClicked");
+
+        setAlarm();
     }
 
     private void setAlarm() {
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 getAlarmTime(),
                 getPendingIntent()
         );
+
+        Log.i(getClass().getName(), "alarm set");
     }
 
     private Intent getAlarmIntent() {
