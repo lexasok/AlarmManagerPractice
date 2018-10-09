@@ -10,7 +10,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int TIME_OUT = 10*1000;
+    public static final int TIMEOUT = 10*1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
+        assert alarmManager != null;
         alarmManager.set(
                 AlarmManager.RTC_WAKEUP,
                 getAlarmTime(),
@@ -59,6 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
     private long getAlarmTime() {
 
-        return System.currentTimeMillis() + TIME_OUT;
+        return System.currentTimeMillis() + TIMEOUT;
     }
 }
