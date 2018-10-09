@@ -8,16 +8,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import net.ozero.alarmmanagerpractice.receivers.AlarmReceiver;
-
 public class MainActivity extends AppCompatActivity {
 
-    public static final int TIME_OUT = 30*1000;
+    public static final int TIME_OUT = 10*1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i(getClass().getName(), "onCreate");
 
     }
 
